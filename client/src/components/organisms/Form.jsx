@@ -29,7 +29,10 @@ const Form = () => {
   }
 
   return (
-    <div className="w-full flex flex-col flex-1 items-center justify-start my-10 border-t border-[#E3E1E3]">
+    <div className="w-full flex flex-col flex-1 items-center justify-start my-10 ">
+      <div className="text-[#1B1A21] dark:text-white self-start text-xl font-semibold mb-5">
+        Send NFTs
+      </div>
       <div className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-[280px] my-5 eth-card white-glassmorphism">
         <div className="flex justify-between flex-col w-full h-full">
           <div className="flex justify-between items-start">
