@@ -21,8 +21,8 @@ const App = () => {
           classProps="w-full md:w-[300px] my-[40px] md:my-[60px] mx-auto"
         />
         <Transactions />
+        <Form />
       </div>
-      <Form />
       <Footer />
     </div>
   );
