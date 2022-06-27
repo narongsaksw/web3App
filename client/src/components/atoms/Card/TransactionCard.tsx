@@ -2,6 +2,16 @@ import React from "react";
 import { shortenAddress } from "../../../utils/shortenAddress";
 import useFetch from "../../../hooks/useFetch";
 
+interface Props {
+  addressTo: string;
+  addressFrom: string;
+  timestamp: string;
+  message: string;
+  keyword: string;
+  amount: string;
+  url: string;
+}
+
 const TransactionCard = ({
   addressTo,
   addressFrom,
@@ -10,7 +20,7 @@ const TransactionCard = ({
   keyword,
   amount,
   url,
-}) => {
+}: Props) => {
   const gif = useFetch({ keyword });
   return (
     <div className="flex flex-col items-center bg-white dark:bg-[#2A2D3A] border dark:border-[#2A2D3A] rounded-[10px] p-2 w-fit drop-shadow-lg">

@@ -9,7 +9,12 @@ import { TransactionContext } from "../../context/TransactionContext";
 
 const menus = ["Market", "Exchange", "Tutorials", "Wallets"];
 
-const NavbarItem = ({ title, classProps }) => {
+interface NavbarItemInterface {
+  title: string;
+  classProps?: string;
+}
+
+const NavbarItem = ({ title, classProps }: NavbarItemInterface) => {
   return (
     <li className={`mx-4 cursor-pointer dark:text-white ${classProps}`}>
       {title}

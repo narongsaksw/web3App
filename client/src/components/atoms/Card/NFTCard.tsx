@@ -1,8 +1,16 @@
 import React from "react";
-import likeIcon from "../../../../images/like.png";
-import unlikeIcon from "../../../../images/unlike.png";
+import likeIcon from "../../../images/like.png";
+import unlikeIcon from "../../../images/unlike.png";
 
-const NFTCard = ({ name, src, price, like, likeAmount }) => {
+interface Props {
+  name: string;
+  src: string;
+  price: string;
+  like: boolean;
+  likeAmount: number;
+}
+
+const NFTCard = ({ name, src, price, like, likeAmount }: Props) => {
   return (
     <div className="flex flex-col items-center bg-white dark:bg-[#2A2D3A] border dark:border-[#2A2D3A] rounded-[10px] p-2 w-fit drop-shadow-lg">
       <img src={src} className="rounded-[10px] w-[130px]" />

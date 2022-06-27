@@ -1,11 +1,11 @@
 import React from "react";
 import { NFTCard } from "../atoms/Card";
-import bid1 from "../../../images/bid1.png";
-import bid2 from "../../../images/bid2.png";
-import bid3 from "../../../images/bid3.png";
-import bid4 from "../../../images/bid4.png";
-import bid5 from "../../../images/bid5.png";
-import bid6 from "../../../images/bid6.png";
+import bid1 from "../../images/bid1.png";
+import bid2 from "../../images/bid2.png";
+import bid3 from "../../images/bid3.png";
+import bid4 from "../../images/bid4.png";
+import bid5 from "../../images/bid5.png";
+import bid6 from "../../images/bid6.png";
 
 const bids = [
   {

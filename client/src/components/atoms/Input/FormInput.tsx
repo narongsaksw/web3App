@@ -1,6 +1,14 @@
 import React from "react";
 
-const Input = ({ placeholder, name, type, value, handleChange }) => (
+interface Props {
+  placeholder: string;
+  name: string;
+  type: string;
+  value: string;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>, name: string) => {};
+}
+
+const Input = ({ placeholder, name, type, value, handleChange }: Props) => (
   <input
     placeholder={placeholder}
     type={type}
