@@ -58,7 +58,7 @@ const HotBids = () => {
       <div className="text-[#1B1A21] dark:text-white text-xl font-semibold mb-5">
         Hot Bids
       </div>
-      <div className="flex flex-wrap gap-2 md:gap-5">
+      <div className="flex flex-wrap gap-2">
         {bids.map((bid, index) => (
           <NFTCard key={index} {...bid} />
         ))}
