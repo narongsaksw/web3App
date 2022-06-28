@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="flex flex-col items-center min-h-screen bg-white dark:bg-[#24252D]">
       <Navbar />
-      <div className="w-[90%] xl:w-auto">
+      <div className="w-[90%] xl:w-[65%]">
         <Banner />
         <TopSellers />
         <HotBids />
